@@ -123,10 +123,10 @@ text-align:center;
     display: flex;
     gap:10px;
     justify-content:space-between;
+    align-items: center; /* <-- Agrega esta línea */
     background-color:#4B2822;
     color:#f8f3f4;
     padding:30px;
-    
 }
 footer{
 
@@ -138,7 +138,26 @@ footer{
     font-weight: bold;;
    
 }
-.footer-iconos svg{
-    padding:10px;
-    
+/* === PIE DE PÁGINA === */
+.footer-iconos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-iconos a {
+    display: inline-flex;
+    padding: 10px;
+    text-decoration: none; /* Quita el subrayado azul del enlace */
+    border-radius: 50%;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.footer-iconos a:hover {
+    transform: scale(1.15); /* Se agranda un poquito al pasar el mouse */
+    background-color: rgba(255, 255, 255, 0.15); /* Un fondo blanco suave */
+}
+
+.footer-iconos svg {
+    display: block; /* Evita espacios raros debajo del SVG */
 }
