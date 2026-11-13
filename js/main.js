@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   // Referencias a los elementos del formulario
   const formulario = document.querySelector(".formularios");
